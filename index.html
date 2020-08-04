@@ -6,55 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
     <meta name="theme-color" content="#0e6faa" />
     <title>Doodleblue | UI Task 2</title>
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/stylesheet.min.css" />
 </head>
 
 <body>
-    <aside class="bg-light">
-        <div class="container-fluid">
+    <aside class="py-2 py-sm-3">
+        <div class="container-fluid px-xl-5">
             <div class="row">
-                <div class="col-3">
-                    Phone: 92 668 888 0000
+                <div class="col-sm-6 col-lg-3 order-2 order-lg-1">
+                    <div class="text-center text-sm-left mb-1 mb-lg-0">
+                        <a class="py-3" href="tel:926688880000">
+                            <i class="fas fa-phone-alt mr-1 text-primary"></i>
+                            Phone: 92 668 888 0000
+                        </a>
+                    </div>
                 </div>
-                <div class="col-6">
-                    Welcome to quality heating, air condition & repair center. <span> <a href="#">Contact now</a></span>
+                <div class="col-lg-6 order-3 order-lg-1">
+                    <div class="text-center">
+                        Welcome to quality heating, air condition & repair center.
+                        <span><u><a href="#" class="text-underline text-nowrap">Contact now</a></u></span>
+                    </div>
                 </div>
-                <div class="col-3">
-                    Email: needhelp@masim.com
+                <div class="col-sm-6 col-lg-3 order-2 order-lg-3">
+                    <div class="text-center text-sm-right mb-1 mb-lg-0">
+                        <a class="py-3" href="mailto:needhelp@masim.com">
+                            <i class="fas fa-envelope mr-1 text-primary"></i>
+                            Email: needhelp@masim.com
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </aside>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">MASIM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
+        <div class="container-fluid px-3 pl-xl-5 pr-xl-0">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <a class="navbar-brand" href="#">MASIM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-5 mr-auto">
+                    <li class="nav-item mx-3 active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Our Work</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Blog Posts</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-social d-flex mx-5">
+                    <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a class="btn-primary my-2 my-sm-0 quoteBtn" type="submit">Get a Free Quote</a>
             </div>
         </div>
     </nav>

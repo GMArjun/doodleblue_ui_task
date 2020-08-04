@@ -1,6 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 $theme-colors: (
   "primary": #ed5059,
+  "secondary": #5663c1,
 );
+$secondary: #5663c1;
+$gray: #f8f9fd;
 $font-family-base: "Roboto", sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  .nav-social {
+    a {
+      height: 32px;
+      width: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 1px solid rgba($black, 0.1);
+      color: rgba($black, 0.5);
+      font-size: 12px;
+      background-color: $gray;
+      text-decoration: none;
+      transition: background 0.5s ease, 0.5s ease;
+      &:hover {
+        border: 1px solid $secondary;
+        background-color: $secondary;
+        color: $white;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+aside {
+  font-size: 12px;
+  color: rgba($black, 0.4);
+  background-color: $gray;
+  font-weight: 500;
+  div {
+    & > a {
+      text-decoration: none !important;
+      color: rgba($black, 0.4);
+      i {
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        i {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.quoteBtn {
+  height: 66px;
+  width: 200px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  color: $white !important;
+}
