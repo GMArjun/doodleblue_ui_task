@@ -6,4 +6,7 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    autoplay: {
+        delay: 3500,
+    }
 })

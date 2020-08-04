@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#0e6faa" />
     <title>Doodleblue | UI Task 2</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/pushbar.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/stylesheet.min.css" />
 </head>
@@ -41,49 +42,80 @@
         </div>
     </aside>
     <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
-        <div class="container-fluid px-3 pl-xl-5 pr-xl-0">
-
+        <div class="container-fluid pl-3 pl-xl-5 pr-0">
+            <button data-pushbar-target="trayLeft" class="btn btn-primary mr-3"><i class="fas fa-bars"></i></button>
             <a class="navbar-brand" href="#">MASIM</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-5 mr-auto">
-                    <li class="nav-item mx-3 active">
+                    <li class="nav-item mx-0 mx-xl-3 active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-0 mx-xl-3">
                         <a class="nav-link" href="#">Pages</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-0 mx-xl-3">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-0 mx-xl-3">
                         <a class="nav-link" href="#">Our Work</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-0 mx-xl-3">
                         <a class="nav-link" href="#">Blog Posts</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-0 mx-xl-3">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="nav-social d-flex mx-5">
+                <div class="nav-social d-flex mx-xl-5">
                     <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
                     <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
                     <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
                     <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
                 </div>
-                <a class="btn-primary my-2 my-sm-0 quoteBtn" type="submit">Get a Free Quote</a>
             </div>
+            <a class="btn-primary  quoteBtn" type="submit">Get a Free Quote</a>
         </div>
     </nav>
 
+    <aside class="sidebar" data-pushbar-id="trayLeft" data-pushbar-direction="left">
+        <button data-pushbar-close>Close</button>
+        <ul class="navbar-nav ml-5 mr-auto">
+            <li class="nav-item mx-3 active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Our Work</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Blog Posts</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="nav-social d-flex mx-5">
+            <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a class="btn-primary quoteBtn" type="submit">Get a Free Quote</a>
+    </aside>
+
     <section class="swiper-container init-banner">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+                <img src="https://www.mrrooter.com/assets/mainstages/local-banner-img-1.jpg" class="w-100" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://myacwala.com/wp-content/uploads/2017/05/acwala-banner6.jpg" class="w-100" alt="">
+            </div>
         </div>
         <div class="bannerContent">
             <div class="info">
@@ -96,6 +128,12 @@
         <div class="swiper-button-next"></div>
     </section>
 
+
+    <script src="js/pushbar.min.js"></script>
+    <script>const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });</script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
