@@ -18,28 +18,6 @@ $font-family-base: "Roboto", sans-serif;
   top: 0;
   z-index: 2;
   background-color: $white;
-  .nav-social {
-    a {
-      height: 32px;
-      width: 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      border: 1px solid rgba($black, 0.1);
-      color: rgba($black, 0.5);
-      font-size: 12px;
-      background-color: $gray;
-      text-decoration: none;
-      transition: background 0.5s ease, 0.5s ease;
-      &:hover {
-        border: 1px solid $secondary;
-        background-color: $secondary;
-        color: $white;
-        transform: scale(1.2);
-      }
-    }
-  }
   .navbar-nav {
     .nav-item {
       &.active {
@@ -51,8 +29,58 @@ $font-family-base: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 500;
         color: rgba($black, 0.3);
+        padding: 0rem 0.4rem;
+        @media (min-width: 1200px) and (max-width: 1240px) {
+          padding: 0rem 0.2rem;
+        }
+        @media (min-width: 992px) and (max-width: 1020px) {
+          padding: 0rem 0.2rem;
+        }
       }
     }
+  }
+
+  .quoteBtn {
+    @media (max-width: 991px) {
+      height: 48px;
+    }
+    @media (max-width: 575px) {
+      width: 120px;
+      font-size: 12px;
+    }
+    @media (max-width: 350px) {
+      width: 110px;
+      font-size: 10px;
+    }
+  }
+}
+
+.nav-social {
+  a {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid rgba($black, 0.1);
+    color: rgba($black, 0.5);
+    font-size: 12px;
+    background-color: $gray;
+    text-decoration: none;
+    transition: background 0.5s ease, 0.5s ease;
+    &:hover {
+      border: 1px solid $secondary;
+      background-color: $secondary;
+      color: $white;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.navbar-brand {
+  .logo {
+    height: 48px;
   }
 }
 
@@ -61,6 +89,9 @@ aside {
   color: rgba($black, 0.3);
   background-color: $gray;
   font-weight: 500;
+  @media (max-width: 991px) {
+    font-size: 10px;
+  }
   div {
     & > a {
       text-decoration: none !important;
@@ -86,13 +117,11 @@ aside {
   justify-content: center;
   align-items: center;
   color: $white !important;
-  @media(max-width: 991px){
+  @media (max-width: 991px) {
     height: 56px;
     width: 152px;
-    margin-left: auto;
-    margin-top: auto;
   }
-  @media (max-width: 575px){
+  @media (max-width: 575px) {
     width: 130px;
   }
 }
@@ -103,6 +132,9 @@ aside {
     position: relative;
     height: 0px;
     padding-bottom: 41%;
+    @media (max-width: 767px) {
+      padding-bottom: 51%;
+    }
     img {
       position: absolute;
       top: 0;
@@ -119,10 +151,17 @@ aside {
     background-color: rgba($white, 0.2);
     width: 45px;
     height: 45px;
+    @media (max-width: 575px) {
+      width: 22px;
+      height: 22px;
+    }
     transition: background 0.5s ease;
     &::after {
-      font-size: 12px;
+      font-size: 10px;
       color: $black;
+      @media (max-width: 575px) {
+        font-size: 10px;
+      }
     }
     &:hover {
       background-color: $primary;
@@ -130,6 +169,9 @@ aside {
       &::after {
         font-size: 16px;
         color: $white;
+        @media (max-width: 575px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -163,25 +205,77 @@ aside {
         font-size: 78px;
         font-weight: 900;
         line-height: 78px;
+        @media (max-width: 1240px) {
+          font-size: 48px;
+          line-height: 48px;
+        }
+        @media (max-width: 800px) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        @media (max-width: 575px) {
+          font-size: 18px;
+          line-height: 18px;
+        }
       }
       .text {
         border: 8px solid rgba($white, 0.2);
         border-bottom: 0px;
         padding: 20px 25px 0px;
+        @media (max-width: 810px) {
+          padding: 10px 15px 0px;
+        }
+        @media (max-width: 575px) {
+          font-size: 18px;
+          line-height: 18px;
+          padding: 8px 12px 0px;
+          border: 4px solid rgba($white, 0.2);
+          border-bottom: 0px;
+        }
       }
       .btn {
         font-size: 14px;
         width: 184px;
         font-weight: 500;
+        padding: 16px;
+        @media (max-width: 1240px) {
+          width: 154px;
+          padding: 10px;
+        }
+        @media (max-width: 800px) {
+          width: 134px;
+          padding: 6px;
+          font-size: 12px;
+        }
+        @media (max-width: 575px) {
+          font-size: 10px;
+          width: unset;
+        }
       }
     }
   }
 }
 
-.sidebar{
+.sidebar {
   flex-direction: column;
   display: flex;
-  .quoteBtn{
+  .navbar-nav {
+    .nav-item {
+      &.active {
+        .nav-link {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+      .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba($black, 0.3);
+        padding: 0.4rem 0.4rem;
+      }
+    }
+  }
+  .quoteBtn {
     width: 100%;
   }
 }

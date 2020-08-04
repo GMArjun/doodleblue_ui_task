@@ -10,3 +10,8 @@ var mySwiper = new Swiper('.swiper-container', {
         delay: 3500,
     }
 })
+
+const pushbar = new Pushbar({
+    blur: true,
+    overlay: true,
+});

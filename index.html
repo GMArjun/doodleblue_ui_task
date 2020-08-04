@@ -13,26 +13,26 @@
 </head>
 
 <body>
-    <aside class="py-2 py-sm-3">
+    <aside class="py-2 py-lg-3">
         <div class="container-fluid px-xl-5">
             <div class="row">
-                <div class="col-sm-6 col-lg-3 order-2 order-lg-1">
-                    <div class="text-center text-sm-left mb-1 mb-lg-0">
-                        <a class="py-3" href="tel:926688880000">
+                <div class="d-none d-md-block col-sm-6 col-md-3 order-2 order-md-1">
+                    <div class="text-center text-md-left mt-1 mt-lg-0">
+                        <a class="py-1 py-sm-3" href="tel:926688880000">
                             <i class="fas fa-phone-alt mr-1 text-primary"></i>
                             Phone: 92 668 888 0000
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 order-3 order-lg-1">
+                <div class="col-md-6 order-1 order-md-2 align-self-center px-1 px-sm-3">
                     <div class="text-center">
                         Welcome to quality heating, air condition & repair center.
                         <span><u><a href="#" class="text-underline text-nowrap">Contact now</a></u></span>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3 order-2 order-lg-3">
-                    <div class="text-center text-sm-right mb-1 mb-lg-0">
-                        <a class="py-3" href="mailto:needhelp@masim.com">
+                <div class="d-none d-md-block col-sm-6 col-md-3 order-3 order-md-3">
+                    <div class="text-center text-md-right mt-1 mt-lg-0">
+                        <a class="py-1 py-sm-3" href="mailto:needhelp@masim.com">
                             <i class="fas fa-envelope mr-1 text-primary"></i>
                             Email: needhelp@masim.com
                         </a>
@@ -41,71 +41,100 @@
             </div>
         </div>
     </aside>
-    <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
+    <nav class="navbar navbar-expand-md navbar-light px-0 py-0">
         <div class="container-fluid pl-3 pl-xl-5 pr-0">
-            <button data-pushbar-target="trayLeft" class="btn btn-primary mr-3"><i class="fas fa-bars"></i></button>
-            <a class="navbar-brand" href="#">MASIM</a>
+            <button data-pushbar-target="trayLeft"
+                class="btn btn-primary mr-1 p-0 px-2 rounded-0 py-1 d-flex justify-content-center align-items-center d-block d-lg-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mr-auto py-0 mr-xl-4" href="#">
+                <img src="assets/images/logo.png" class="logo" alt="">
+            </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-5 mr-auto">
-                    <li class="nav-item mx-0 mx-xl-3 active">
+                <ul class="navbar-nav ml-md-3 ml-lg-5 mr-auto">
+                    <li class="nav-item mx-lg-1 mx-xl-3 active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item mx-0 mx-xl-3">
+                    <li class="nav-item mx-lg-1 mx-xl-3">
                         <a class="nav-link" href="#">Pages</a>
                     </li>
-                    <li class="nav-item mx-0 mx-xl-3">
+                    <li class="nav-item mx-lg-1 mx-xl-3">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item mx-0 mx-xl-3">
+                    <li class="nav-item mx-lg-1 mx-xl-3">
                         <a class="nav-link" href="#">Our Work</a>
                     </li>
-                    <li class="nav-item mx-0 mx-xl-3">
+                    <li class="nav-item mx-lg-1 mx-xl-3">
                         <a class="nav-link" href="#">Blog Posts</a>
                     </li>
-                    <li class="nav-item mx-0 mx-xl-3">
+                    <li class="nav-item mx-lg-1 mx-xl-3">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="nav-social d-flex mx-xl-5">
-                    <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
-                    <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
-                    <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
-                </div>
+            </div>
+            <div class="nav-social d-none d-lg-flex ml-auto mr-4 mr-xl-5">
+                <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
             </div>
             <a class="btn-primary  quoteBtn" type="submit">Get a Free Quote</a>
         </div>
     </nav>
 
     <aside class="sidebar" data-pushbar-id="trayLeft" data-pushbar-direction="left">
-        <button data-pushbar-close>Close</button>
-        <ul class="navbar-nav ml-5 mr-auto">
-            <li class="nav-item mx-3 active">
-                <a class="nav-link" href="#">Home</a>
+        <div class="d-flex px-2 pt-2 bg-light">
+            <a class="navbar-brand py-0 mr-auto align-self-center" href="#">
+                <img src="assets/images/logo.png" class="logo" alt="">
+            </a>
+            <button data-pushbar-close class="border-0 p-1 px-2 align-self-start">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="bg-light p-3">
+            <div class="mb-2">
+                <a class="py-1" href="tel:926688880000">
+                    <i class="fas fa-phone-alt mr-1 text-primary"></i>
+                    Phone: 92 668 888 0000
+                </a>
+            </div>
+
+            <div class="">
+                <a class="py-1" href="mailto:needhelp@masim.com">
+                    <i class="fas fa-envelope mr-1 text-primary"></i>
+                    Email: needhelp@masim.com
+                </a>
+            </div>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link px-3" href="#">Home</a>
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Pages</a>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="#">Pages</a>
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Services</a>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="#">Services</a>
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Our Work</a>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="#">Our Work</a>
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Blog Posts</a>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="#">Blog Posts</a>
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="#">Contact</a>
             </li>
         </ul>
-        <div class="nav-social d-flex mx-5">
+        <div class="nav-social d-flex mt-auto px-2 justify-content-center">
             <a href="#" class="mx-1"> <i class="fab fa-twitter"></i></a>
             <a href="#" class="mx-1"> <i class="fab fa-facebook-square"></i></a>
             <a href="#" class="mx-1"> <i class="fab fa-pinterest-p"></i></a>
             <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
         </div>
-        <a class="btn-primary quoteBtn" type="submit">Get a Free Quote</a>
+        <a class="btn-primary quoteBtn mt-3" type="submit">Get a Free Quote</a>
     </aside>
 
     <section class="swiper-container init-banner">
@@ -121,19 +150,14 @@
             <div class="info">
                 <div class="text-center text">Quality Heating <br> & Air Condition</div>
                 <span class="text-primary">Services</span>
-                <button class="btn btn-secondary rounded-0 mt-3 p-3 px-4">Book our services</button>
+                <button class="btn btn-secondary rounded-0 mt-1 mt-sm-3">Book our services</button>
             </div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </section>
 
-
     <script src="js/pushbar.min.js"></script>
-    <script>const pushbar = new Pushbar({
-            blur: true,
-            overlay: true,
-        });</script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
