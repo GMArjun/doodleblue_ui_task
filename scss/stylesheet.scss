@@ -781,3 +781,83 @@ aside {
     }
   }
 }
+
+.contact{
+  .mapWrap{
+    position: relative;
+    height: 560px;
+    @media(max-width: 991px){
+      height: 100%;
+    }
+    @media(max-width: 767px){
+      height: 400px
+    }
+    @media(max-width: 575px){
+      height: 280px
+    }
+    img{
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .ribbon{
+      background-color: $secondary;
+      position: absolute;
+      max-width: 360px;
+      text-align: center;
+      width: 100%;
+      right: -241px;
+      color: $white;
+      top:50%;
+      transform: rotate(-90deg) translate(0%,-50%);
+      padding: 20px 40px;
+      font-size: 14px;
+      @media(max-width: 991px){
+        padding: 12px 30px;
+        font-size: 12px;
+        right: -193px;
+        max-width: 300px;
+      }
+      @media(max-width: 991px){
+        left: 50%;
+        top: unset;
+        bottom: 0;
+        transform: rotate(0deg) translate(-50%,0%);
+      }
+      a{
+        text-decoration: none;
+        &:hover{
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  .customPad{
+    @media(max-width: 767px){
+      padding: 5px 30px;
+    }
+    @media(max-width: 575px){
+      padding: 5px 0px;
+    }
+  }
+  .form{
+    max-width: 350px;
+    @media(max-width:1199px){
+      max-width: 290px;
+    }
+    @media(max-width: 767px){
+      max-width: 100%;
+    }
+    input,textarea{
+      background-color: $gray;
+      font-size: 12px;
+      border: 1px solid rgba($black, 0.1);
+      padding: 18px;
+      width: 100%;
+      font-weight: 500;
+    }
+  }
+}
