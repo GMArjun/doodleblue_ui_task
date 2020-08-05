@@ -232,7 +232,7 @@ aside {
         }
         @media (max-width: 575px) {
           font-size: 20px;
-          line-height: 22px;
+          line-height: 28px;
           padding: 8px 12px 0px;
           border: 4px solid rgba($white, 0.2);
           border-bottom: 0px;
@@ -297,6 +297,9 @@ aside {
   @media (max-width: 1199px) {
     font-size: 28px;
   }
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
 }
 .tilted {
   @media (max-width: 1199px) {
@@ -312,6 +315,11 @@ aside {
   .imgContainer {
     position: relative;
     height: 100%;
+    @media (max-width: 991px) {
+      height: 440px;
+      max-width: 340px;
+      margin: 0 auto;
+    }
     img {
       position: absolute;
       top: 0;
@@ -326,7 +334,7 @@ aside {
       left: -130px;
       padding: 14px;
       background-color: $white;
-      @media(max-width: 1199px){
+      @media (max-width: 1199px) {
         bottom: 85px;
         left: -80px;
         padding: 8px;
@@ -360,8 +368,8 @@ aside {
       background-color: $primary;
       bottom: 0;
       right: 0;
-      height: 110px;
-      width: 110px;
+      height: 105px;
+      width: 105px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -397,6 +405,14 @@ aside {
     }
     .row {
       & > div {
+        @media (max-width: 575px) {
+          border: none !important;
+          border-bottom: 1px solid rgba($black, 0.1) !important;
+          padding: 10px 0px !important;
+          &:last-child {
+            border-bottom: 0px !important;
+          }
+        }
         &:first-child {
           border-right: 1px solid rgba($black, 0.1);
           border-bottom: 1px solid rgba($black, 0.1);
@@ -404,6 +420,8 @@ aside {
 
           @media (max-width: 1199px) {
             padding: 0px 15px 15px 0px;
+          }
+          @media (max-width: 575px) {
           }
         }
         &:nth-child(3) {
@@ -462,6 +480,12 @@ aside {
   max-width: 1060px;
   padding: 40px 84px;
   background-color: #fff;
+  @media (max-width: 991px) {
+    padding: 40px 46px;
+  }
+  @media (max-width: 575px) {
+    padding: 20px 15px;
+  }
 }
 .nSpeaks {
   background-image: url("https://www.missionac.com/wp-content/uploads/2019/12/AC-Repair-Banner.png");
@@ -476,6 +500,9 @@ aside {
   align-items: center;
   @media (max-width: 1199px) {
     margin-top: -70px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 0px;
   }
 
   .title {
