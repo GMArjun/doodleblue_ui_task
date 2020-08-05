@@ -554,11 +554,11 @@ aside {
       justify-content: center;
       align-items: center;
       transition: background 0.5s ease, 0.5s ease;
-      @media(max-width: 768px){
+      @media (max-width: 768px) {
         height: 108px;
         width: 108px;
       }
-      @media(max-width: 575px){
+      @media (max-width: 575px) {
         height: 126px;
         width: 126px;
       }
@@ -580,7 +580,7 @@ aside {
       font-weight: 500;
       line-height: 18px;
       font-size: 15px;
-      @media(max-width: 575px){
+      @media (max-width: 575px) {
         font-size: 12px;
       }
     }
@@ -589,4 +589,47 @@ aside {
 
 .fw500 {
   font-weight: 500;
+}
+
+.serviceList {
+  color: rgba($white, 0.8);
+  .tilted {
+    color: rgba($white, 0.8);
+  }
+  .Lists {
+    span {
+      font-size: 14px;
+      color: rgba($white, 0.8);
+    }
+  }
+  .imgContainer {
+    position: relative;
+    height: 540px;
+    margin-top: -120px;
+    @media (max-width: 991px) {
+      height: 440px;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    @media (max-width: 575px) {
+      height: 320px;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .crown{
+    background-color: $white;
+    box-shadow: 0px 0px 7px -5px rgba(0,0,0,0.4);
+    img{
+      height: 40px;
+    }
+  }
 }
