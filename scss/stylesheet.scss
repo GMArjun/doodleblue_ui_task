@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 $theme-colors: (
   "primary": #ed5059,
   "secondary": #5663c1,
 );
+$rose: #ED979D; 
 $primary: #ed5059;
 $secondary: #5663c1;
 $gray: #f8f9fd;
-$font-family-base: 'Poppins', sans-serif;
+$font-family-base: "Poppins", sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
@@ -19,6 +20,7 @@ $font-family-base: 'Poppins', sans-serif;
   top: 0;
   z-index: 2;
   background-color: $white;
+  box-shadow: 0px 0px 7px -5px rgba($black, 0.4);
   .navbar-nav {
     .nav-item {
       &.active {
@@ -150,8 +152,8 @@ aside {
   .swiper-button-prev,
   .swiper-button-next {
     background-color: rgba($white, 0.2);
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     @media (max-width: 575px) {
       width: 22px;
       height: 22px;
@@ -280,5 +282,95 @@ aside {
   }
   .quoteBtn {
     width: 100%;
+  }
+}
+
+.lilTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $secondary;
+}
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #000;
+}
+.minContainer {
+  max-width: 925px;
+}
+.intro {
+  .imgContainer {
+    position: relative;
+    height: 100%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .cellCol {
+    i {
+      color: $secondary;
+      font-size: 22px;
+    }
+    span {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .content {
+      color: rgba($black, 0.3);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+    .row {
+      & > div {
+        &:first-child {
+          border-right: 1px solid rgba($black, 0.1);
+          border-bottom: 1px solid rgba($black, 0.1);
+          padding: 0px 20px 20px 0px;
+        }
+        &:nth-child(3) {
+          border-right: 1px solid rgba($black, 0.1);
+          padding: 20px 20px 0px 0px;
+        }
+        &:nth-child(2) {
+          border-bottom: 1px solid rgba($black, 0.1);
+          padding: 0px 0px 20px 40px;
+        }
+        &:last-child {
+          padding: 20px 0px 0px 40px;
+        }
+      }
+    }
+  }
+  .tilted{
+    font-size: 15px;
+    color: $rose;
+    font-weight: 500;
+  }
+  .btn{
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 160px;
+  }
+  .contact{
+    div{
+      font-size: 14px;
+      color: rgba($black, 0.3);
+    }
+    i{
+      font-size: 20px;
+    }
+    a {
+      font-size: 16px;
+      font-weight: bold;
+      color: $black;
+      text-decoration: none;
+    }
   }
 }
