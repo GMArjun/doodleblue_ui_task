@@ -904,3 +904,16 @@ aside {
     }
   }
 }
+
+.brandRun{
+  .swiper-slide{
+    filter: grayscale(100%);
+    &.swiper-slide-active{
+      filter : none;
+    }
+    width: auto !important;
+    img{
+      height: 30px;
+    }
+  }
+}
