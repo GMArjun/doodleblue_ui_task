@@ -209,7 +209,7 @@ aside {
         font-size: 72px;
         font-weight: 700;
         line-height: 72px;
-        word-spacing: -5px;
+        word-spacing: -3px;
         @media (max-width: 1290px) {
           font-size: 48px;
           line-height: 48px;
@@ -236,6 +236,7 @@ aside {
           padding: 8px 12px 0px;
           border: 4px solid rgba($white, 0.2);
           border-bottom: 0px;
+          word-spacing: normal;
         }
       }
       .btn {
@@ -320,6 +321,11 @@ aside {
       max-width: 340px;
       margin: 0 auto;
     }
+    @media (max-width: 575px) {
+      height: 320px;
+      max-width: 250px;
+      margin: 0 auto;
+    }
     img {
       position: absolute;
       top: 0;
@@ -339,6 +345,9 @@ aside {
         left: -80px;
         padding: 8px;
       }
+      @media (max-width: 575px) {
+        left: -30px;
+      }
       .holder {
         position: relative;
         width: 240px;
@@ -347,6 +356,10 @@ aside {
         @media (max-width: 1199px) {
           width: 180px;
           height: 120px;
+        }
+        @media (max-width: 575px) {
+          width: 120px;
+          height: 70px;
         }
         img {
           position: absolute;
@@ -377,6 +390,10 @@ aside {
       @media (max-width: 1199px) {
         height: 90px;
         width: 90px;
+      }
+      @media (max-width: 575px) {
+        height: 55px;
+        width: 55px;
       }
       &:hover {
         i {
