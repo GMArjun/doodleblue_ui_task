@@ -793,7 +793,7 @@ aside {
       height: 400px
     }
     @media(max-width: 575px){
-      height: 280px
+      height: 255px
     }
     img{
       position: absolute;
@@ -818,14 +818,15 @@ aside {
       @media(max-width: 991px){
         padding: 12px 30px;
         font-size: 12px;
-        right: -193px;
-        max-width: 300px;
+        right: -125px;
+        max-width: 250px;
+        top:44%;
       }
-      @media(max-width: 991px){
-        left: 50%;
-        top: unset;
-        bottom: 0;
-        transform: rotate(0deg) translate(-50%,0%);
+      @media(max-width: 575px){
+        top:42.5%;
+        max-width: 220px;
+        padding: 12px 15px;
+        right: -110px;
       }
       a{
         text-decoration: none;
@@ -860,4 +861,8 @@ aside {
       font-weight: 500;
     }
   }
+}
+
+.quote{
+  
 }
