@@ -307,9 +307,6 @@ aside {
     font-size: 12px;
   }
 }
-.minContainer {
-  max-width: 925px;
-}
 .intro {
   z-index: 1;
   position: relative;
@@ -493,6 +490,16 @@ aside {
     }
   }
 }
+.minContainer {
+  max-width: 925px;
+  padding: 20px 15px;
+  @media (max-width: 991px) {
+    padding: 40px 46px;
+  }
+  @media (max-width: 575px) {
+    padding: 20px 15px;
+  }
+}
 .minContainerP {
   max-width: 1060px;
   padding: 40px 84px;
@@ -525,6 +532,12 @@ aside {
   .title {
     font-size: 34px;
     font-weight: 600;
+    @media (max-width: 1199px) {
+      font-size: 28px;
+    }
+    @media (max-width: 575px) {
+      font-size: 20px;
+    }
   }
   .btn {
     font-size: 12px;
@@ -536,10 +549,19 @@ aside {
       background-color: #2b2d3c;
       border: 1px solid rgba($white, 0.1);
       height: 118px;
+      width: 118px;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: background 0.5s ease, 0.5s ease;
+      @media(max-width: 768px){
+        height: 108px;
+        width: 108px;
+      }
+      @media(max-width: 575px){
+        height: 126px;
+        width: 126px;
+      }
       cursor: pointer;
       img {
         height: 50px;
@@ -558,6 +580,9 @@ aside {
       font-weight: 500;
       line-height: 18px;
       font-size: 15px;
+      @media(max-width: 575px){
+        font-size: 12px;
+      }
     }
   }
 }
