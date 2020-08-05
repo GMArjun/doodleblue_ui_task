@@ -691,7 +691,7 @@ aside {
   .colFlex {
     & > div {
       border-right: 1px solid rgba($black, 0.1);
-      @media(max-width:767px){
+      @media (max-width: 767px) {
         border: 0px;
       }
       &:last-child {
@@ -746,23 +746,23 @@ aside {
 .bookBar {
   border: 5px solid $secondary;
   overflow: hidden;
-  h3{
+  h3 {
     font-size: 26px;
     font-weight: bold;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       font-size: 20px;
     }
-    @media(max-width: 575px){
+    @media (max-width: 575px) {
       font-size: 18px;
     }
   }
   .img-sect {
     position: relative;
     overflow: hidden;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       height: 220px;
     }
-     @media(max-width: 575px){
+    @media (max-width: 575px) {
       height: 180px;
     }
     img {
@@ -777,33 +777,32 @@ aside {
       &:hover {
         transform: scale(1.1);
       }
-      
     }
   }
 }
 
-.contact{
-  .mapWrap{
+.contact {
+  .mapWrap {
     position: relative;
     height: 560px;
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
       height: 100%;
     }
-    @media(max-width: 767px){
-      height: 400px
+    @media (max-width: 767px) {
+      height: 400px;
     }
-    @media(max-width: 575px){
-      height: 255px
+    @media (max-width: 575px) {
+      height: 255px;
     }
-    img{
+    img {
       position: absolute;
-      top:0;
+      top: 0;
       left: 0;
       height: 100%;
       width: 100%;
       object-fit: cover;
     }
-    .ribbon{
+    .ribbon {
       background-color: $secondary;
       position: absolute;
       max-width: 360px;
@@ -811,48 +810,49 @@ aside {
       width: 100%;
       right: -241px;
       color: $white;
-      top:50%;
-      transform: rotate(-90deg) translate(0%,-50%);
+      top: 50%;
+      transform: rotate(-90deg) translate(0%, -50%);
       padding: 20px 40px;
       font-size: 14px;
-      @media(max-width: 991px){
+      @media (max-width: 991px) {
         padding: 12px 30px;
         font-size: 12px;
         right: -125px;
         max-width: 250px;
-        top:44%;
+        top: 44%;
       }
-      @media(max-width: 575px){
-        top:42.5%;
+      @media (max-width: 575px) {
+        top: 42.5%;
         max-width: 220px;
         padding: 12px 15px;
         right: -110px;
       }
-      a{
+      a {
         text-decoration: none;
-        &:hover{
+        &:hover {
           color: $primary !important;
         }
       }
     }
   }
-  .customPad{
-    @media(max-width: 767px){
+  .customPad {
+    @media (max-width: 767px) {
       padding: 5px 30px;
     }
-    @media(max-width: 575px){
+    @media (max-width: 575px) {
       padding: 5px 0px;
     }
   }
-  .form{
+  .form {
     max-width: 350px;
-    @media(max-width:1199px){
+    @media (max-width: 1199px) {
       max-width: 290px;
     }
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       max-width: 100%;
     }
-    input,textarea{
+    input,
+    textarea {
       background-color: $gray;
       font-size: 12px;
       border: 1px solid rgba($black, 0.1);
@@ -863,6 +863,44 @@ aside {
   }
 }
 
-.quote{
-  
+.selectService {
+  .services {
+    position: relative;
+    padding-bottom: 106%;
+    height: 0;
+    overflow: hidden;
+    @media (min-width: 1600px) {
+      padding-bottom: 98%;
+    }
+    &:hover, &:active{
+      .overlay{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      z-index: 1;
+      background-color: rgba($primary, 0.9);
+      color: rgba($white, 0.8);
+      left: 0;
+      top: 0;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+    }
+  }
 }
