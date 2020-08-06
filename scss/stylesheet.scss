@@ -185,7 +185,7 @@ aside {
     right: 0;
   }
   .bannerContent {
-    background-color: rgba($secondary, 0.2);
+    background-color: rgba($black, 0.3);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -287,9 +287,11 @@ aside {
 }
 
 .lilTitle {
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   color: $secondary;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .title {
   font-size: 38px;
@@ -512,7 +514,7 @@ aside {
   }
 }
 .nSpeaks {
-  background-image: url("https://www.missionac.com/wp-content/uploads/2019/12/AC-Repair-Banner.png");
+  background-image: url("../assets/images/temp/AC-Repair-Banner.png");
   background-size: cover;
   min-height: 530px;
   position: relative;
@@ -866,6 +868,14 @@ aside {
   }
 }
 
+.btnWidthC {
+  min-width: 190px;
+}
+
+.btnWidthB {
+  min-width: 170px !important;
+}
+
 .selectService {
   .services {
     position: relative;
@@ -957,7 +967,7 @@ aside {
         bottom: 0;
         left: 0;
         font-size: 12px;
-        @media(max-width: 575px){
+        @media (max-width: 575px) {
           font-size: 10px;
           padding: 8px 13px;
         }
@@ -968,12 +978,12 @@ aside {
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
       font-size: 18px;
       line-height: initial;
     }
   }
-  .muted{
+  .muted {
     line-height: 22px;
   }
 }

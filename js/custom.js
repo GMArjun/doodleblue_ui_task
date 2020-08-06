@@ -1,7 +1,5 @@
 var mySwiper = new Swiper('.init-banner', {
-    // Optional parameters
     loop: true,
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -15,7 +13,7 @@ var mySwiper = new Swiper('.brandRun', {
     slidesPerView: "auto",
     loop: true,
     centeredSlides: true,
-    speed: 3000,
+    speed: 2000,
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -48,13 +46,7 @@ var mySwiper = new Swiper('.newsFeeders', {
             spaceBetween: 20,
             slidesPerView: 2
         }
-    },
-    speed: 6000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-
+    }
 })
 
 
