@@ -15,8 +15,10 @@ var mySwiper = new Swiper('.brandRun', {
     slidesPerView: "auto",
     loop: true,
     centeredSlides: true,
+    speed: 3000,
     autoplay: {
-        delay: 2500,
+        delay: 0,
+        disableOnInteraction: false,
     },
     breakpoints: {
         320: {
@@ -29,6 +31,30 @@ var mySwiper = new Swiper('.brandRun', {
             spaceBetween: 100
         }
     }
+})
+
+var mySwiper = new Swiper('.newsFeeders', {
+    loop: true,
+    breakpoints: {
+        320: {
+            spaceBetween: 15,
+            slidesPerView: 2
+        },
+        768: {
+            spaceBetween: 10,
+            slidesPerView: 3
+        },
+        992: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        }
+    },
+    speed: 6000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+
 })
 
 
