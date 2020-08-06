@@ -875,8 +875,9 @@ aside {
     @media (min-width: 1600px) {
       padding-bottom: 98%;
     }
-    &:hover, &:active{
-      .overlay{
+    &:hover,
+    &:active {
+      .overlay {
         opacity: 1;
         cursor: pointer;
       }
@@ -908,34 +909,34 @@ aside {
   }
 }
 
-.brandRun{
-  .swiper-slide{
+.brandRun {
+  .swiper-slide {
     filter: grayscale(100%);
-    &.swiper-slide-active{
-      filter : none;
+    &.swiper-slide-active {
+      filter: none;
     }
     width: auto !important;
-    img{
+    img {
       height: 30px;
     }
   }
 }
 
-footer{
+footer {
   font-weight: 500;
   background-color: #2b2d3c;
   color: #fff;
-  .border-bottom{
+  .border-bottom {
     border-bottom: 1px solid rgba(#6c757d, 0.4) !important;
   }
-  .logo{
+  .logo {
     height: 40px;
   }
 
-  .fLinks{
+  .fLinks {
     color: #6c757d;
     font-size: 12px;
-    a{
+    a {
       color: #6c757d !important;
       text-decoration: none;
       &:before {
@@ -948,23 +949,64 @@ footer{
         width: 6px;
         margin-right: 5px;
       }
-      &:hover{
+      &:hover {
         color: $white !important;
-        &::before{
+        &::before {
           background-color: $primary;
         }
       }
     }
   }
-  .nav-social{
-    a{
-    background-color: #2b2d3c !important; 
-    border: 1px solid rgba($white, 0.2);
-    color: rgba($white, 0.8);
-    &:hover{
-      background-color: $primary !important;
-      border: 1px solid $primary;
+  .nav-social {
+    a {
+      background-color: #2b2d3c !important;
+      border: 1px solid rgba($white, 0.2);
+      color: rgba($white, 0.8);
+      &:hover {
+        background-color: $primary !important;
+        border: 1px solid $primary;
+      }
     }
   }
+  .news {
+    img {
+      height: 53px;
+      width: 53px;
+      object-fit: cover;
+    }
+    .line-clamp {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  .nletter {
+    h5{
+      font-size: 18px;
+      font-weight: bold;
+      @media(max-width: 991px){
+        font-size: 14px;
+      }
+    }
+    .form {
+      display: flex;
+      @media(max-width:470px){
+        flex-direction: column;
+      }
+      input {
+        padding: 16px 18px;
+        border: none;
+        width: 100%;
+        font-size: 12px;
+      }
+      button {
+        flex: 0 0 auto;
+        min-width: 140px;
+        @media(max-width: 991px){
+          min-width: 100px;
+        }
+      }
+    }
   }
 }
